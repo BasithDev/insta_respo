@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+aside{
+    border-right: 1px solid rgb(54, 54, 54);
+}
+.logoContainer svg{
+    cursor: pointer;
+}
+.fixed-top{
+    width: max-content;
+}
+.navAside .nav-links p,.more_menu{
+    padding: 0;
+    margin: 0;
+}
+.nav-links p:first-child{
+    font-weight: 500;
+}
+.nav-links p:hover,.more_menu:hover{
+    background-color: rgb(27, 27, 27);
+}
+svg{
+    fill: #FFF;
+}
+.stories {
+    overflow-x: scroll;
+    white-space: nowrap; /* Ensures that the items stay in a single line */
+  }
+
+  .stories::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for webkit browsers */
+  }
+.stories img{
+    width: 3.8rem;
+    height: fit-content;
+    background: linear-gradient(to top right, rgb(254,218,117), rgb(250,126,30),  rgb(214,41,118),  rgb(150,47,191));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    padding: 2.5px;
+}
+.story:last-child img{
+    width: 3.8rem;
+    height: fit-content;
+    background: linear-gradient(to top right, rgb(43, 43, 43), rgb(42, 42, 42),  rgb(42, 42, 42),  rgb(42, 42, 42));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    padding: 2.5px;
+}
+.stories p{
+    font-size: 12px;
+}
+.posts{
+    transition: margin 0.5s ease;
+}
+.username{
+    font-size: 14px;
+    font-weight: 500;
+}
+.post .post-header img{
+    width: 2.25rem;
+}
+.story-circle img{
+    background: linear-gradient(to top right, rgb(254,218,117), rgb(250,126,30),  rgb(214,41,118),  rgb(150,47,191));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    padding: 2.5px;
+}
+.post-body img{
+    width: 100%;
+    height: fit-content;
+}
+.post-footer .left svg{
+    width: 2rem;
+    margin: 5px;
+}
+.post-footer svg{
+    width: 3rem;
+}
+.description{
+    position: relative;
+}
+.description p{
+    font-size: 14px;
+}
+.description svg{
+    fill: rgb(0, 149, 246);
+    position: absolute;
+    top: 3px;
+    left: 49px;
+}
+.username svg{
+    fill: rgb(0, 149, 246);
+}
+.description .posted-ago{
+    color: grey;
+    font-weight: 500;
+    font-size: 14px;
+}
+html,body{
+    overflow-x: hidden;
+}
+.suggestions p,img{
+    cursor: pointer;
+}
+.suggestions a{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.suggestions a:hover{
+    color: white;
+}
+.suggestions a:nth-child(2){
+    color: white;
+}
+.suggestions a:nth-child(2):hover{
+    color: rgb(112, 112, 112);
+}
+.info-text{
+    font-weight: 500;
+    color: rgb(164,164,164);
+}
+.suggestions .users p:nth-child(2){
+    font-size: 10px;
+}
+.sidebar-navlinks a , .sidebar-navlinks , .copyright-sec{
+    color: gray;
+    text-decoration: none;
+    font-size: 13px;
+}
+.sidebar-navlinks a:hover{
+    text-decoration: underline;
+}
+@media (min-width: 560px) { .posts { margin:0 calc(18vw); } } 
+@media (min-width: 900px) { .posts { margin:0 calc(7vw); } }
+@media (min-width: 1010px) { .posts { margin:0 calc(6vw); } }
+@media (min-width: 1400px) { .posts { margin:0 10rem; } }
+@media (max-width: 1180px) {
+    .suggestions .users p:nth-child(2){
+        font-size: 8px;
+     }
+     .suggestions .users p:first-child{
+        font-size: 11px;
+     }
+}
