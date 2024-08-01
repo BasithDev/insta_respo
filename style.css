@@ -1,147 +1,237 @@
-*{
+/* Global styles */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-aside{
+
+/* Styling for the aside element */
+aside {
     border-right: 1px solid rgb(54, 54, 54);
 }
-.logoContainer svg{
-    cursor: pointer;
+
+/* Styling for the logo container with SVG */
+.logoContainer svg {
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
-.fixed-top{
+
+/* Fixed top class for specific width setting */
+.fixed-top {
     width: max-content;
 }
-.navAside .nav-links p,.more_menu{
+
+/* Styling for navigation links and more menu in the aside */
+.navAside .nav-links p, .more_menu {
     padding: 0;
     margin: 0;
 }
-.nav-links p:first-child{
-    font-weight: 500;
+/* Styling for the first child of nav-links */
+.nav-links p:first-child {
+    font-weight: 500; /* Bolds the first paragraph */
 }
-.nav-links p:hover,.more_menu:hover{
-    background-color: rgb(27, 27, 27);
-}
-svg{
-    fill: #FFF;
-}
-.stories {
-    overflow-x: scroll;
-    white-space: nowrap; /* Ensures that the items stay in a single line */
-  }
 
-  .stories::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for webkit browsers */
-  }
-.stories img{
+/* Hover effect for navigation links and more menu */
+.nav-links p:hover, .more_menu:hover {
+    background-color: rgb(27, 27, 27); /* Changes background color on hover */
+}
+.menudiv{
+    margin-top: 40%;
+}
+/* General SVG styling */
+svg {
+    fill: #FFF; /* Sets SVG fill color to white */
+}
+
+/* Stories container styling */
+.stories {
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Keeps items in a single line */
+}
+
+/* Hides scrollbar for WebKit browsers */
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styling for individual story images */
+.stories img {
     width: 3.8rem;
     height: fit-content;
-    background: linear-gradient(to top right, rgb(254,218,117), rgb(250,126,30),  rgb(214,41,118),  rgb(150,47,191));
+    background: linear-gradient(to top right, rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191));
     background-clip: padding-box, border-box;
     background-origin: border-box;
     padding: 2.5px;
 }
-.story:last-child img{
+
+/* Specific styling for the last story's image */
+.story:last-child img {
     width: 3.8rem;
     height: fit-content;
-    background: linear-gradient(to top right, rgb(43, 43, 43), rgb(42, 42, 42),  rgb(42, 42, 42),  rgb(42, 42, 42));
+    background: linear-gradient(to top right, rgb(43, 43, 43), rgb(42, 42, 42), rgb(42, 42, 42), rgb(42, 42, 42));
     background-clip: padding-box, border-box;
     background-origin: border-box;
     padding: 2.5px;
 }
-.stories p{
+
+/* Styling for story captions */
+.stories p {
     font-size: 12px;
 }
-.posts{
-    transition: margin 0.5s ease;
+
+/* Transition effect for posts */
+.posts {
+    transition: margin 0.5s ease; /* Smooth transition for margin changes */
 }
-.username{
+
+/* Username styling */
+.username {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500; /* Bolder font for username */
 }
-.post .post-header img{
-    width: 2.25rem;
+
+/* Styling for post header images */
+.post .post-header img {
+    width: 2.25rem; /* Sets image width */
 }
-.story-circle img{
-    background: linear-gradient(to top right, rgb(254,218,117), rgb(250,126,30),  rgb(214,41,118),  rgb(150,47,191));
+
+/* Story circle styling */
+.story-circle img {
+    background: linear-gradient(to top right, rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191));
     background-clip: padding-box, border-box;
     background-origin: border-box;
     padding: 2.5px;
 }
-.post-body img{
-    width: 100%;
+
+/* Styling for post body images */
+.post-body img {
+    width: 100%; /* Full width for post images */
     height: fit-content;
 }
-.post-footer .left svg{
+
+/* Styling for left post footer icons */
+.post-footer .left svg {
     width: 2rem;
     margin: 5px;
 }
-.post-footer svg{
+
+/* General styling for post footer icons */
+.post-footer svg {
     width: 3rem;
 }
-.description{
+
+/* Description styling */
+.description {
     position: relative;
 }
-.description p{
+
+/* Font styling for description paragraphs */
+.description p {
     font-size: 14px;
 }
-.description svg{
+
+/* SVG styling within description */
+.description svg {
     fill: rgb(0, 149, 246);
     position: absolute;
     top: 3px;
     left: 49px;
 }
-.username svg{
+
+/* SVG styling within username */
+.username svg {
     fill: rgb(0, 149, 246);
 }
-.description .posted-ago{
+
+/* Styling for posted-ago text in description */
+.description .posted-ago {
     color: grey;
     font-weight: 500;
     font-size: 14px;
 }
-html,body{
+
+/* Prevents horizontal overflow */
+html, body {
     overflow-x: hidden;
 }
-.suggestions p,img{
+
+/* Styling for suggestions section */
+.suggestions p, img {
     cursor: pointer;
 }
-.suggestions a{
+
+/* Styling for suggestion links */
+.suggestions a {
     font-weight: 600;
     font-size: 0.8rem;
 }
-.suggestions a:hover{
+
+/* Hover effect for suggestion links */
+.suggestions a:hover {
     color: white;
 }
-.suggestions a:nth-child(2){
+
+/* Specific styling for the second child in suggestions */
+.suggestions a:nth-child(2) {
     color: white;
 }
-.suggestions a:nth-child(2):hover{
+
+/* Hover effect for the second child in suggestions */
+.suggestions a:nth-child(2):hover {
     color: rgb(112, 112, 112);
 }
-.info-text{
+
+/* Styling for info text */
+.info-text {
     font-weight: 500;
-    color: rgb(164,164,164);
+    color: rgb(164, 164, 164);
 }
-.suggestions .users p:nth-child(2){
+
+/* Font size adjustments for suggestions' user info */
+.suggestions .users p:nth-child(2) {
     font-size: 10px;
 }
-.sidebar-navlinks a , .sidebar-navlinks , .copyright-sec{
+
+/* Styling for sidebar navigation links, text, and copyright section */
+.sidebar-navlinks a, .sidebar-navlinks, .copyright-sec {
     color: gray;
     text-decoration: none;
     font-size: 13px;
 }
-.sidebar-navlinks a:hover{
+
+/* Hover effect for sidebar links */
+.sidebar-navlinks a:hover {
     text-decoration: underline;
 }
-@media (min-width: 560px) { .posts { margin:0 calc(18vw); } } 
-@media (min-width: 900px) { .posts { margin:0 calc(7vw); } }
-@media (min-width: 1010px) { .posts { margin:0 calc(6vw); } }
-@media (min-width: 1400px) { .posts { margin:0 10rem; } }
+
+/* Media queries for responsive design */
+
+/* Adjusts margin for posts at different screen widths */
+@media (min-width: 560px) { 
+    .posts { 
+        margin: 0 18vw; 
+    } 
+}
+@media (min-width: 900px) { 
+    .posts { 
+        margin: 0 7vw; 
+    } 
+}
+@media (min-width: 1020px) { 
+    .posts { 
+        margin: 0 6vw; 
+    }
+}
+@media (min-width: 1400px) { 
+    .posts { 
+        margin: 0 10rem; 
+    } 
+}
+/* Font size adjustments for suggestions on smaller screens */
 @media (max-width: 1180px) {
-    .suggestions .users p:nth-child(2){
+    .suggestions .users p:nth-child(2) {
         font-size: 8px;
-     }
-     .suggestions .users p:first-child{
+    }
+    .suggestions .users p:first-child {
         font-size: 11px;
-     }
+    }
 }
